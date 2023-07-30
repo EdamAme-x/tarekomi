@@ -8,9 +8,10 @@ export default function Form() {
       method: "POST",
       body: `{
         "content": ${content}
-      }`
-    })
+      }`,
+    });
     alert("送信ありがと : " + content);
+    location.reload();
   }
 
   return (
